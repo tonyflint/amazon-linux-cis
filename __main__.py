@@ -265,7 +265,9 @@ def configure_network_params():
 def configure_ipv6_params():
     """3.3 IPv6"""
     PropertyFile('/etc/sysctl.conf', ' = ').override({
+        'net.ipv6.conf.all.accept_source_route': '0',
         'net.ipv6.conf.all.accept_ra': '0',
+        'net.ipv6.conf.default.accept_source_route': '0',
         'net.ipv6.conf.default.accept_ra': '0',
         'net.ipv6.conf.all.accept_redirects': '0',
         'net.ipv6.conf.default.accept_redirects': '0'
