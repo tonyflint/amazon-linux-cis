@@ -32,7 +32,6 @@ def set_mount_options():
     options = {
         '/tmp': 'tmpfs /tmp tmpfs rw,nosuid,nodev,noexec,relatime 0 0',
         '/var/tmp': 'tmpfs /var/tmp tmpfs rw,nosuid,nodev,noexec,relatime 0 0',
-        '/home': '/dev/xvdf1 /home ext4 rw,nodev,relatime,data=ordered 0 0',
         '/dev/shm': 'tmpfs /dev/shm tmpfs rw,nosuid,nodev,noexec,relatime 0 0'
     }
 
