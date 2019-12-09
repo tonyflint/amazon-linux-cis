@@ -269,7 +269,8 @@ def configure_ipv6_params():
         'net.ipv6.conf.default.accept_source_route': '0',
         'net.ipv6.conf.default.accept_ra': '0',
         'net.ipv6.conf.all.accept_redirects': '0',
-        'net.ipv6.conf.default.accept_redirects': '0'
+        'net.ipv6.conf.default.accept_redirects': '0',
+        'net.ipv6.conf.all.forwarding': '0'
     }).write()
 
     # 3.3.3 Ensure IPv6 is disabled
